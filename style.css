@@ -1,0 +1,150 @@
+/*Styling*/
+
+body {
+    background-color: #F1F492;
+    /*    color: #F1F492;*/
+    color: seagreen;
+    /*    font: 'Fredoka One', cursive;*/
+    font-family: 'Fredoka One', cursive;
+    /*animation*/
+    animation-name: bgColorAnim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    transition-timing-function: ease-out;
+    /*    animation-timing-function: ease-out;*/
+}
+
+/*Centering all divs*/
+.headshot {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    /*justify - horizontal*/
+    /*align - vertical*/
+    /*Margin is set auto 0, div is the widget*/
+}
+
+.name, .classAndMajor {
+    text-align: center;
+}
+
+.bio, .moreInfo {
+    padding: 0px 20px 0px 450px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.moreInfo {
+    margin-top: 50px;
+}
+
+.link {
+    text-align: center;
+}
+
+ul {
+/*    text-align: center;*/
+    list-style: inside;
+}
+
+ol {
+    list-style: inside;
+    list-style-type: decimal;
+}
+
+/*Headshot Div*/
+.headshot img {
+    width: 200px;
+    /*circular image*/
+    opacity: 0.5;
+/*    filter: blur(3px);*/
+    border-radius: 50%;
+    transition: 0.5s;
+}
+    .headshot img:hover {
+        opacity: 1.0;
+        border-radius: 70%;
+    }
+
+.headshot {
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    /*    border: 1px solid black;*/
+    width: 200px;
+    border-style: dashed;
+    border-width: 7px;
+    border-color: seagreen;
+    border-radius: 50%;
+    /*border color anim*/
+    animation-name: borderColorAnim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    transition-timing-function: ease-out;
+}
+
+@keyframes bgColorAnim {
+    0% {
+        background-color: #F1F492;
+        color: #BFDF87;
+    }
+
+    40% {
+        background-color: #BFDF87;
+        color: #F1F492;
+    }
+
+    70% {
+        background-color: #F1F492;
+        color: #BFDF87;
+    }
+    100% {
+        background-color: #F1F492;
+        color: #BFDF87;
+    }
+}
+
+@keyframes borderColorAnim {
+    0% {
+        margin-top: 250px;
+        margin-bottom: 1000px;
+        border-color: #BFDF87;
+    }
+
+    40% {
+        margin-top: 250px;
+        margin-bottom: 1000px;
+        border-color: #F1F492;
+    }
+
+    70% {
+        margin-top: 200px;
+        margin-bottom: 600px;
+        border-color: #BFDF87;
+    }
+
+    100% {
+        margin-bottom: 50px;
+        margin-top: 50px;
+        border-color: #BFDF87;
+    }
+}
+
+.name {
+    margin-top: 100px;
+    transition: 0.3s;
+}
+
+.classAndMajor {
+    margin-bottom: 100px;
+    transition: 0.3s;
+}
+
+.name:hover {
+    font-size: 1.3em;
+}
+
+.classAndMajor:hover {
+    font-size: 1.3em;
+}
+
