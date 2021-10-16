@@ -8,7 +8,7 @@ body {
     font-family: 'Fredoka One', cursive;
     /*animation*/
     animation-name: bgColorAnim;
-    animation-duration: 2s;
+    animation-duration: 4s;
     animation-iteration-count: 1;
     transition-timing-function: ease-out;
     /*    animation-timing-function: ease-out;*/
@@ -43,7 +43,7 @@ body {
 }
 
 ul {
-/*    text-align: center;*/
+    /*    text-align: center;*/
     list-style: inside;
 }
 
@@ -56,13 +56,14 @@ ol {
 .headshot img {
     width: 200px;
     /*circular image*/
-    opacity: 0.5;
-/*    filter: blur(3px);*/
+    opacity: 1.0;
+    /*    filter: blur(3px);*/
     border-radius: 50%;
     transition: 0.5s;
 }
+
     .headshot img:hover {
-        opacity: 1.0;
+        opacity: 0.5;
         border-radius: 70%;
     }
 
@@ -78,7 +79,7 @@ ol {
     border-radius: 50%;
     /*border color anim*/
     animation-name: borderColorAnim;
-    animation-duration: 2s;
+    animation-duration: 4s;
     animation-iteration-count: 1;
     transition-timing-function: ease-out;
 }
@@ -98,6 +99,7 @@ ol {
         background-color: #F1F492;
         color: #BFDF87;
     }
+
     100% {
         background-color: #F1F492;
         color: #BFDF87;
@@ -119,7 +121,7 @@ ol {
 
     70% {
         margin-top: 200px;
-        margin-bottom: 600px;
+        margin-bottom: 700px;
         border-color: #BFDF87;
     }
 
@@ -147,4 +149,3 @@ ol {
 .classAndMajor:hover {
     font-size: 1.3em;
 }
-
